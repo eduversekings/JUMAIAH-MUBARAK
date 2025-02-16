@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits & Vegetables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+        }
+        .container {
+            margin: 20px;
+        }
+        .product {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+        }
+        .order-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Fresh Fruits & Vegetables</header>
+    <div class="container">
+        <div class="product">
+            <h3>Apples</h3>
+            <p>$2 per kg</p>
+            <button class="order-button" onclick="orderNow('Apples')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Bananas</h3>
+            <p>$1 per kg</p>
+            <button class="order-button" onclick="orderNow('Bananas')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Carrots</h3>
+            <p>$1.5 per kg</p>
+            <button class="order-button" onclick="orderNow('Carrots')">Order Now</button>
+        </div>
+    </div>
+    <script>
+        function orderNow(item) {
+            window.location.href = "https://forms.gle/YOUR_GOOGLE_FORM_LINK";
+        }
+    </script>
+</body>
+</html>
